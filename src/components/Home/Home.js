@@ -13,13 +13,13 @@ import { storeData } from '../../redux/storeData/action';
 
 
 export const Home = (props) => {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  // const [loading, setLoading] = useState(false);
+  // const [error, setError] = useState(false);
 
   const [page, setPage] = useState(1);
 
   const [search, setSearch] = useState('');
-  const [value, setValue] = useState([]);
+  // const [value, setValue] = useState([]);
   //console.log(search)
   const [val, setVal] = useState('');
 
@@ -60,10 +60,6 @@ const navigate =useNavigate()
   }
   function handleCart() {
 	navigate('/cart')
-  }
-
-  function handleClickCart1() {
-	navigate('/product/:id')
   }
 
    const data1 = useSelector((state) => state.Cart.cart)
@@ -146,6 +142,7 @@ const navigate =useNavigate()
       <div className="container ">
         {data
           .filter((el) => {
+            
             if (el.category === val) {
               return el.category === val;
             } else if (val === '') {

@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 
 import {addCart}  from '../../redux/Cart/action'
-import {useNavigate,Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import PersonSharpIcon from '@mui/icons-material/PersonSharp';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 export const ProductDetail = (props) => {
@@ -95,7 +95,7 @@ const [img,setImg] = useState("")
 		
 	   </div>
 	 
-	   <div className="mt ml-4 ">
+	   <div className="mta ml-4 ">
 	 
 	   <PersonSharpIcon fontSize="large" className="cursor-pointer"  />
 	   </div>
@@ -161,7 +161,7 @@ const [img,setImg] = useState("")
                       </div>
                     </div>
                      <div className="w-96 h-48 text-gray-500">
-					 <p>{data.details.overview}</p>
+					 {/* <p>{data.details.overview}</p> */}
 					 </div>
 					<div>
 						
