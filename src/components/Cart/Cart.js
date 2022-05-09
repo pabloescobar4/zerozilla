@@ -1,11 +1,11 @@
-import {React  ,useState}from 'react'
-import { useSelector, useDispatch } from 'react-redux';
-import {useNavigate,Link} from 'react-router-dom'
+import {React  }from 'react'
+import { useSelector} from 'react-redux';
+// import {useNavigate,Link} from 'react-router-dom'
 export const Cart = (props) => {
 
 	const data1 = useSelector((state) => state.Cart.cart)
 	console.log(data1)
-	const [img,setImg] = useState("")
+	// const [img,setImg] = useState("")
   return(
 	  
 	<div>
