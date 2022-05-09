@@ -142,6 +142,7 @@ const [img,setImg] = useState("")
 
                         <div className="text-gray-500 mt-2 d2">
                           <p>Save ₹ {data.total_savings}</p>
+						 
                         </div>
 						<div className="b  w-3/5 text-white mt-2 ml-20">
                       <div>
@@ -159,6 +160,13 @@ const [img,setImg] = useState("")
 				 </button> */}
                       </div>
                     </div>
+                     <div className="w-96 h-48 text-gray-500">
+					 <p>{data.details.overview}</p>
+					 </div>
+					<div>
+						
+					
+					</div>
                       </div>
                     </div>
 	 </div>
